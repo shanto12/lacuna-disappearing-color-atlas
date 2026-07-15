@@ -1087,7 +1087,7 @@ h2 em {
   bottom: 1.3rem;
   left: 1.3rem;
   margin: 0;
-  color: rgba(245, 242, 239, 0.45);
+  color: rgba(245, 242, 239, 0.6);
   font-size: 0.56rem;
   line-height: 1.5;
 }
@@ -1198,7 +1198,7 @@ footer p {
 }
 
 footer span {
-  color: rgba(245, 242, 239, 0.45);
+  color: rgba(245, 242, 239, 0.6);
 }
 
 .sr-only {

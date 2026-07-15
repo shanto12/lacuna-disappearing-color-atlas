@@ -29,6 +29,13 @@ export const metadata: Metadata = {
   description:
     "A cinematic field study in four fugitive moments, where movement agitates color and stillness lets it resolve.",
   applicationName: "LACUNA",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   alternates: { canonical: SITE_URL },
   openGraph: {
     type: "website",

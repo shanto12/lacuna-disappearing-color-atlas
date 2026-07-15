@@ -41,7 +41,11 @@ test("ships production metadata and bespoke social imagery", async () => {
   assert.match(html, /rel="canonical" href="https:\/\/lacuna-disappearing-color-atlas\.netlify\.app"/i);
   assert.match(html, /property="og:image" content="https:\/\/lacuna-disappearing-color-atlas\.netlify\.app\/og\.png"/i);
   assert.match(html, /name="twitter:card" content="summary_large_image"/i);
-  await access(new URL("../public/og.png", import.meta.url));
+  await Promise.all([
+    access(new URL("../public/og.png", import.meta.url)),
+    access(new URL("../public/favicon.ico", import.meta.url)),
+    access(new URL("../public/favicon.svg", import.meta.url)),
+  ]);
 });
 
 test("keeps the finished source accessible, bounded, and hardened", async () => {
