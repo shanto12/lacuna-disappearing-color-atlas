@@ -37,3 +37,5 @@ npm run verify
 ```
 
 The release suite covers linting, type safety, rendered-output tests, both production builds, and the production dependency audit. The same suite runs on every push and pull request through GitHub Actions.
+
+See the [production release evidence](docs/release-evidence.md) and the [latest public release](https://github.com/shanto12/lacuna-disappearing-color-atlas/releases/latest) for the live verification record.

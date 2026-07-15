@@ -38,7 +38,8 @@ test("ships production metadata and bespoke social imagery", async () => {
   const response = await render();
   const html = await response.text();
   assert.match(html, /property="og:title" content="LACUNA — Some colors only exist while they are leaving"/i);
-  assert.match(html, /property="og:image" content="https?:\/\/[^\"]+\/og\.png"/i);
+  assert.match(html, /rel="canonical" href="https:\/\/lacuna-disappearing-color-atlas\.netlify\.app"/i);
+  assert.match(html, /property="og:image" content="https:\/\/lacuna-disappearing-color-atlas\.netlify\.app\/og\.png"/i);
   assert.match(html, /name="twitter:card" content="summary_large_image"/i);
   await access(new URL("../public/og.png", import.meta.url));
 });
